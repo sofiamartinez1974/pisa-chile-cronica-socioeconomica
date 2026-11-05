@@ -3,178 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La brecha se achicó | PISA Chile</title>
+
+  <title>La brecha se achicó. El problema de fondo sigue ahí</title>
 
   <style>
-    :root {
-      --vino: #822b40;
-      --coral: #d97b6b;
-      --papel: #fcf8f2;
-      --crema: #f2e9dd;
-      --texto: #2b2526;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
-      background: var(--papel);
-      color: var(--texto);
       font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.85;
+      background-color: white;
+      color: #222;
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 0;
+      padding: 24px;
     }
 
-    header {
-      background: #442631;
-      color: white;
-      padding: 100px 24px 85px;
-      text-align: center;
-    }
-
-    .etiqueta {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: #f0b7ad;
+    main {
+      max-width: 900px;
+      margin: 0 auto;
     }
 
     h1 {
-      max-width: 950px;
-      margin: 25px auto;
-      font-size: clamp(38px, 6vw, 76px);
-      line-height: 1.12;
-    }
-
-    .bajada {
-      max-width: 740px;
-      margin: auto;
-      font-size: 21px;
-      color: #f1dcd8;
-    }
-
-    article {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 64px 24px;
-    }
-
-    article p {
-      font-size: 19px;
-      margin: 0 0 28px;
+      font-size: 34px;
+      line-height: 1.2;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      font-weight: bold;
     }
 
     h2 {
-      font-size: clamp(29px, 4vw, 43px);
-      line-height: 1.2;
-      margin: 65px 0 24px;
-      color: var(--vino);
+      font-size: 25px;
+      line-height: 1.3;
+      margin-top: 35px;
+      margin-bottom: 12px;
     }
 
-    .entrada::first-letter {
-      float: left;
-      font-size: 4em;
-      line-height: .82;
-      padding-right: 12px;
-      color: var(--vino);
+    p {
+      margin-bottom: 17px;
     }
 
-    .grafico {
-      background: white;
-      border: 1px solid #e6d9d3;
-      border-radius: 8px;
-      padding: 30px;
-      margin: 45px 0;
-    }
-
-    .grafico h3 {
-      font-family: Arial, sans-serif;
-      font-size: 21px;
-      margin: 0 0 6px;
-    }
-
-    .subtitulo {
-      font-family: Arial, sans-serif;
-      font-size: 14px !important;
-      color: #655d5b;
-    }
-
-    .grafico img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .fuente {
-      font-family: Arial, sans-serif;
-      font-size: 13px !important;
-      color: #6b6260;
-      margin-top: 14px !important;
-    }
-
-    figure {
-      margin: 35px 0 45px;
-    }
-
-    figure img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 5px;
+    .bajada {
+      font-size: 18px;
+      margin-bottom: 28px;
     }
 
     .destacado {
-      font-size: 27px;
-      font-style: italic;
+      font-weight: bold;
+    }
+
+    figure {
+      margin: 25px 0;
+    }
+
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      font-size: 13px;
+      color: #555;
+      margin-top: 8px;
       line-height: 1.5;
-      border-left: 5px solid var(--coral);
-      padding: 10px 0 10px 26px;
-      margin: 50px 0;
-      color: var(--vino);
     }
 
-    .referencias {
-      margin-top: 65px;
-      border-top: 1px solid #d9c7c3;
-      padding-top: 20px;
+    .grafico {
+      max-width: 900px;
     }
 
-    .referencias p {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.75;
+    .fuentes {
+      font-size: 15px;
+      margin-top: 35px;
+      padding-top: 15px;
+      border-top: 1px solid #ccc;
     }
 
     a {
-      color: var(--vino);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      color: #6b6260;
+      color: #245a87;
+      text-decoration: underline;
+      overflow-wrap: anywhere;
     }
 
     @media (max-width: 600px) {
-      header {
-        padding: 70px 20px;
+      body {
+        padding: 16px;
+        font-size: 16px;
       }
 
-      article {
-        padding-top: 45px;
+      h1 {
+        font-size: 29px;
       }
 
-      article p {
-        font-size: 18px;
-      }
-
-      .grafico {
-        padding: 14px;
+      h2 {
+        font-size: 22px;
       }
     }
   </style>
@@ -182,234 +103,405 @@
 
 <body>
 
-  <header>
-    <div class="etiqueta">
-      Chile · Educación · PISA
-    </div>
+<main>
 
-    <h1>
-      La brecha se achicó.
-      El problema de fondo sigue ahí
-    </h1>
+  <h1>La brecha se achicó. El problema de fondo sigue ahí</h1>
 
-    <p class="bajada">
-      Los resultados PISA muestran que la distancia
-      en lectura entre estudiantes de mayores y menores
-      recursos disminuyó. Detrás de ese acercamiento,
-      sin embargo, hay una caída entre quienes antes
-      lideraban los puntajes.
+  <p class="bajada">
+    Los resultados PISA muestran que la distancia en comprensión
+    lectora entre los estudiantes chilenos de mayores y menores
+    recursos se redujo entre 2006 y 2022. Pero ese acercamiento
+    no significa necesariamente una mejora: parte de la explicación
+    está en el retroceso de quienes antes obtenían los puntajes
+    más altos. La pandemia y las nuevas condiciones de aprendizaje
+    ayudan a comprender el contexto de esta transformación.
+  </p>
+
+  <h2>Una desigualdad que venía de antes</h2>
+
+  <p>
+    En Chile, las oportunidades de aprendizaje no comienzan
+    necesariamente en igualdad de condiciones. El acceso a
+    libros, espacios de estudio, conectividad y apoyo educativo
+    puede variar considerablemente entre los hogares.
+    Esa desigualdad también aparece en los resultados
+    de comprensión lectora de los estudiantes.
+  </p>
+
+  <p>
+    La prueba PISA, aplicada por la Organización para la
+    Cooperación y el Desarrollo Económicos (OCDE) a jóvenes
+    de 15 años, permite observar estas diferencias a través
+    del tiempo. Una de sus herramientas es el índice
+    socioeconómico y cultural, que agrupa a los estudiantes
+    según sus condiciones familiares y recursos disponibles.
+  </p>
+
+  <p>
+    En 2006, los estudiantes chilenos del quintil
+    socioeconómico y cultural más alto obtuvieron
+    <strong>517 puntos en Lectura</strong>, mientras que
+    aquellos del quintil más bajo alcanzaron
+    <strong>391 puntos</strong>.
+    La distancia era de 126 puntos.
+  </p>
+
+  <p>
+    La diferencia era considerable. Sin embargo, al revisar
+    los resultados de los años siguientes aparece un cambio
+    que, a primera vista, podría interpretarse como una
+    señal de mayor igualdad.
+  </p>
+
+  <h2>Cuando la distancia comenzó a reducirse</h2>
+
+  <p>
+    En 2018, el quintil de mayores recursos registró
+    509 puntos y el de menores recursos, 409.
+    La distancia se había reducido a 100 puntos.
+  </p>
+
+  <p>
+    Cuatro años después, en PISA 2022, el quintil
+    más favorecido alcanzó 495 puntos, mientras
+    que el menos favorecido llegó a 413.
+    La diferencia entre ambos grupos fue de 82 puntos.
+  </p>
+
+  <p>
+    <strong>Entre 2006 y 2022, la brecha entre los
+    extremos pasó de 126 a 82 puntos.</strong>
+    Pero lo importante no es solamente cuánto
+    disminuyó la distancia, sino cómo ocurrió.
+  </p>
+
+  <p>
+    Entre 2018 y 2022, el quintil más alto perdió
+    14 puntos. El más bajo, en cambio, aumentó
+    cuatro puntos. Así, una parte importante del
+    acercamiento entre ambos grupos se explica
+    por la caída de quienes antes lideraban
+    los resultados.
+  </p>
+
+  <p>
+    Esto no significa que los estudiantes de menores
+    recursos hayan alcanzado a los más favorecidos.
+    La desigualdad sigue existiendo, pero la evolución
+    de los puntajes muestra que una brecha puede
+    reducirse sin que todos estén aprendiendo más.
+  </p>
+
+  <h2>Lo que muestran los cinco quintiles</h2>
+
+  <p>
+    La comparación entre los grupos extremos permite
+    identificar el cambio principal. Sin embargo,
+    al observar los cinco quintiles socioeconómicos
+    y culturales es posible apreciar una trayectoria
+    más completa de la comprensión lectora en Chile.
+  </p>
+
+  <p>
+    Los resultados muestran que los estudiantes de
+    contextos más favorecidos han mantenido una
+    ventaja respecto de los grupos de menores
+    recursos. Aun así, esa posición no los ha
+    protegido de las fluctuaciones y retrocesos
+    observados a lo largo de la serie.
+  </p>
+
+  <figure class="grafico">
+    <img
+      src="visualizacion_pisa_socioeconomico.jpg"
+      alt="Gráfico de evolución de puntajes PISA de lectura por quintil socioeconómico y cultural en Chile, entre 2006 y 2022"
+    >
+
+    <figcaption>
+      Evolución de los resultados de comprensión lectora
+      por quintil socioeconómico y cultural en Chile,
+      2006-2022. Fuente: Agencia de Calidad de la Educación,
+      presentación PISA 2022, página 27.
+    </figcaption>
+  </figure>
+
+  <h2>La pandemia: un punto de inflexión</h2>
+
+  <p>
+    En marzo de 2020, las salas de clases cerraron
+    y gran parte de la educación se trasladó a los hogares.
+    Los estudiantes dejaron de compartir un mismo
+    espacio de aprendizaje y comenzaron a depender,
+    en mayor medida, de las condiciones disponibles
+    en sus casas.
+  </p>
+
+  <p>
+    Para algunos, continuar estudiando significó
+    conectarse desde un computador personal,
+    disponer de una habitación tranquila y contar
+    con adultos que podían acompañar sus tareas.
+    Para otros, implicó compartir dispositivos,
+    enfrentar problemas de conexión o estudiar
+    en espacios con múltiples interrupciones.
+  </p>
+
+  <p>
+    Estas diferencias hicieron especialmente visible
+    una desigualdad que ya existía. Sin embargo,
+    la interrupción de la presencialidad también
+    alteró las rutinas de aprendizaje de estudiantes
+    de distintos contextos socioeconómicos.
+  </p>
+
+  <figure>
+    <img
+      src="foto_pandemia.jpg"
+      alt="Estudiante realizando actividades escolares desde su casa durante una clase a distancia"
+    >
+
+    <figcaption>
+      La educación a distancia trasladó parte del
+      aprendizaje desde las salas de clases hacia
+      los hogares durante la pandemia.
+    </figcaption>
+  </figure>
+
+  <p>
+    El cierre de las escuelas no explica por sí solo
+    el descenso de los puntajes del quintil más alto.
+    Sin embargo, ofrece un contexto relevante:
+    incluso los estudiantes que contaban con mayores
+    recursos enfrentaron interrupciones en sus
+    experiencias escolares, cambios en sus hábitos
+    de estudio y una menor continuidad de la
+    enseñanza presencial.
+  </p>
+
+  <p>
+    Por eso, la pandemia puede entenderse como
+    un punto de inflexión para analizar la trayectoria
+    educativa, aunque los resultados PISA no permiten
+    atribuir directamente a ella la caída de un
+    grupo socioeconómico específico.
+  </p>
+
+  <h2>Una generación marcada por el encierro</h2>
+
+  <p>
+    Los estudiantes que rindieron PISA 2025 tenían
+    alrededor de nueve o diez años cuando comenzó
+    la pandemia. En ese momento cursaban,
+    generalmente, cuarto o quinto básico:
+    una etapa importante para consolidar la
+    comprensión de textos, ampliar vocabulario
+    y desarrollar autonomía lectora.
+  </p>
+
+  <p>
+    Cuando llegaron a los 15 años, sus resultados
+    mostraron que la recuperación de los aprendizajes
+    seguía siendo un desafío.
+  </p>
+
+  <p>
+    Según la Agencia de Calidad de la Educación,
+    el puntaje promedio nacional de Lectura en
+    PISA 2025 disminuyó 12 puntos respecto de 2022.
+    Además, el 38% de los estudiantes chilenos
+    se ubicó bajo el Nivel 2, considerado el umbral
+    de competencias fundamentales en la evaluación.
+  </p>
+
+  <p>
+    Estos datos corresponden al desempeño nacional.
+    No permiten afirmar que todos los quintiles
+    socioeconómicos hayan evolucionado de la misma
+    manera entre 2022 y 2025. Sin embargo,
+    muestran que el problema de la comprensión
+    lectora continúa después de la pandemia.
+  </p>
+
+  <h2>Las pantallas y la dificultad de concentrarse</h2>
+
+  <p>
+    La pandemia no fue el único cambio que atravesó
+    la experiencia escolar de esta generación.
+    Durante los últimos años, los teléfonos
+    inteligentes, las redes sociales y las
+    plataformas digitales adquirieron un lugar
+    cada vez más importante en la vida cotidiana
+    de los adolescentes.
+  </p>
+
+  <p>
+    Estas herramientas también pueden facilitar
+    el acceso a información y materiales educativos.
+    No obstante, su uso durante las clases plantea
+    nuevas dificultades relacionadas con la atención
+    y las distracciones.
+  </p>
+
+  <p>
+    En PISA 2025, un 48% de los estudiantes
+    chilenos señaló que en todas o en la mayoría
+    de sus clases de Ciencias Naturales existían
+    distracciones asociadas al uso de recursos
+    digitales o informáticos. El promedio
+    de la OCDE fue de 28%.
+  </p>
+
+  <p>
+    Este indicador no mide directamente la
+    comprensión lectora ni demuestra que los
+    celulares hayan provocado el descenso de
+    los puntajes. Sin embargo, permite observar
+    un problema presente en el ambiente de
+    aprendizaje: mantener la concentración
+    puede resultar cada vez más difícil.
+  </p>
+
+  <p>
+    Un reportaje de La Tercera sobre los resultados
+    PISA 2025 también abordó la experiencia
+    de la generación que vivió la pandemia
+    y el uso excesivo de pantallas como posibles
+    factores asociados al desempeño educativo.
+    Se trata de hipótesis para comprender el
+    fenómeno, no de explicaciones causales
+    comprobadas para cada quintil.
+  </p>
+
+  <h2>¿Por qué retrocedieron quienes antes lideraban?</h2>
+
+  <p>
+    La caída del quintil más favorecido entre
+    2018 y 2022 es uno de los hallazgos más
+    relevantes de esta subhistoria. Durante
+    años, disponer de mayores recursos
+    socioeconómicos y culturales estuvo asociado
+    con mejores resultados de lectura.
+  </p>
+
+  <p>
+    Pero contar con ventajas materiales no
+    garantiza que los aprendizajes se mantengan
+    estables frente a cambios importantes
+    en las condiciones educativas.
+  </p>
+
+  <p>
+    La interrupción de la presencialidad,
+    las transformaciones en las rutinas escolares
+    y las dificultades para sostener la atención
+    aparecen como factores que podrían contribuir
+    a comprender el escenario posterior a la
+    pandemia.
+  </p>
+
+  <p>
+    Aun así, la información disponible no permite
+    determinar cuánto influyó cada uno de ellos
+    en el descenso del quintil alto.
+    Para establecer esa relación sería necesario
+    analizar datos individuales y otras variables
+    del contexto escolar y familiar.
+  </p>
+
+  <h2>Conclusión: una brecha menor no significa una mejor lectura</h2>
+
+  <p>
+    La evolución de PISA muestra que la desigualdad
+    socioeconómica en comprensión lectora sigue
+    presente en Chile. Aunque la distancia entre
+    los quintiles extremos disminuyó entre 2006
+    y 2022, parte de esa reducción ocurrió porque
+    retrocedieron los estudiantes que antes
+    obtenían los mejores resultados.
+  </p>
+
+  <p>
+    La pandemia y las nuevas condiciones de
+    aprendizaje ofrecen posibles explicaciones
+    para investigar ese retroceso, mientras que
+    PISA 2025 confirma que el desempeño nacional
+    en Lectura continúa enfrentando dificultades.
+    <strong>La conclusión es clara: reducir la
+    distancia entre estudiantes no basta si
+    el sistema educativo no consigue mejorar
+    los aprendizajes de todos.</strong>
+  </p>
+
+  <section class="fuentes">
+
+    <h2>Fuentes y metodología</h2>
+
+    <p>
+      Esta crónica utiliza la serie histórica
+      de resultados de Lectura por quintil
+      socioeconómico y cultural de Chile
+      entre 2006 y 2022, presentada por la
+      Agencia de Calidad de la Educación.
+      Los datos nacionales de PISA 2025
+      se emplean como contexto posterior,
+      no como continuación de la serie
+      histórica por quintiles.
     </p>
-  </header>
 
-  <main>
-    <article>
+    <p>
+      <strong>Agencia de Calidad de la Educación.</strong>
+      PISA 2022: Evaluación internacional
+      de estudiantes tras la pandemia,
+      página 27.
+      <a href="https://www.agenciaeducacion.cl/evaluar/estudios-internacionales/pisa/" target="_blank" rel="noopener noreferrer">
+        Consultar publicaciones PISA
+      </a>.
+    </p>
 
-      <p class="entrada">
-        A primera vista, la cifra invita al optimismo:
-        la distancia entre los estudiantes chilenos de
-        mayores y menores recursos se ha reducido.
-        Pero para entender lo que ocurrió con la
-        comprensión lectora hay que mirar algo más
-        que la diferencia entre dos grupos.
-        Importa saber quién avanzó, quién retrocedió
-        y qué estaba pasando en las escuelas cuando
-        cambiaron los resultados.
-      </p>
+    <p>
+      <strong>Agencia de Calidad de la Educación.</strong>
+      Caída en los resultados PISA 2025
+      ratifica necesidad de poner el foco
+      en el logro de los aprendizajes.
+      8 de septiembre de 2026.
+      <a href="https://www.agenciaeducacion.cl/caida-en-los-resultados-pisa-2025-ratifica-necesidad-de-poner-el-foco-en-el-logro-de-los-aprendizajes/" target="_blank" rel="noopener noreferrer">
+        Leer publicación
+      </a>.
+    </p>
 
-      <h2>Una brecha que venía de antes</h2>
+    <p>
+      <strong>La Tercera.</strong>
+      Por qué a Chile le fue mal en la prueba
+      PISA: generación pandemia y uso excesivo
+      de pantallas asoman como factores.
+      <a href="https://www.latercera.com/nacional/noticia/por-que-a-chile-le-fue-mal-en-la-prueba-pisa-generacion-pandemia-y-uso-excesivo-de-pantallas-asoman-como-factores/" target="_blank" rel="noopener noreferrer">
+        Leer reportaje
+      </a>.
+    </p>
 
-      <p>
-        Mucho antes de que se hablara de clases por
-        videollamada, el origen socioeconómico ya
-        estaba relacionado con los resultados de
-        comprensión lectora. En PISA 2006, la
-        diferencia entre el quintil de mayores
-        recursos y el de menores recursos alcanzaba
-        126 puntos: 517 frente a 391.
-      </p>
+    <p>
+      <strong>OCDE.</strong>
+      Programa para la Evaluación Internacional
+      de Estudiantes (PISA).
+      <a href="https://www.oecd.org/en/about/programmes/pisa.html" target="_blank" rel="noopener noreferrer">
+        Consultar programa
+      </a>.
+    </p>
 
-      <p>
-        En 2018, la distancia era de 100 puntos.
-        Los estudiantes del quintil superior
-        promediaban 509 y los del inferior, 409.
-        Cuatro años después, en PISA 2022,
-        esa separación había bajado a 82 puntos:
-        495 frente a 413.
-      </p>
+    <p>
+      <strong>Nota metodológica:</strong>
+      Las diferencias de puntaje se describen
+      como variaciones observadas en la serie.
+      No todas implican necesariamente cambios
+      estadísticamente significativos.
+      Los factores mencionados son hipótesis
+      contextuales y no constituyen pruebas
+      de causalidad.
+    </p>
 
-      <div class="grafico">
-        <h3>
-          La distancia lectora entre quintiles
-          se estrecha
-        </h3>
+  </section>
 
-        <p class="subtitulo">
-          Chile, PISA 2006–2022.
-          Puntaje promedio de lectura
-          por quintil socioeconómico.
-        </p>
-
-        <img
-          src="visualizacion_pisa_socioeconomico.jpg"
-          alt="Gráfico de cinco líneas que compara
-          los puntajes de lectura por quintil
-          socioeconómico en Chile entre 2006 y 2022"
-        >
-
-        <p class="fuente">
-          Fuente: base de datos PISA por quintiles
-          socioeconómicos trabajada para el proyecto.
-        </p>
-      </div>
-
-      <p>
-        La reducción de la brecha puede parecer
-        una señal alentadora. Pero mirar únicamente
-        la distancia entre los extremos oculta parte
-        de la historia: entre 2018 y 2022, el grupo
-        de mayores recursos cayó 14 puntos,
-        mientras que el de menores recursos subió
-        cuatro. La diferencia disminuyó, en buena
-        medida, porque quienes antes obtenían
-        mejores resultados retrocedieron.
-      </p>
-
-      <p>
-        Esto no significa que las condiciones
-        educativas de ambos grupos se hayan
-        igualado. Una brecha más pequeña no equivale
-        necesariamente a un sistema más justo
-        ni a una mejora general del aprendizaje.
-      </p>
-
-      <h2>Cuando la escuela entró a las casas</h2>
-
-      <p>
-        En marzo de 2020, las salas de clases
-        quedaron vacías. La educación se trasladó
-        a los hogares y, por un tiempo, la
-        posibilidad de seguir aprendiendo dependió
-        también de una conexión a internet,
-        un dispositivo disponible y un lugar donde
-        concentrarse. El cierre de colegios afectó
-        a estudiantes de establecimientos públicos
-        y privados, pero no todos lo enfrentaron
-        con los mismos recursos. Mientras algunas
-        familias pudieron mantener rutinas y
-        acompañamiento escolar, otras debieron
-        compartir computadores o teléfonos y
-        combinar las clases con las exigencias
-        de la casa. La pandemia fue un punto de
-        inflexión para toda una generación, aunque
-        no explica por sí sola las diferencias
-        de puntaje entre quintiles.
-      </p>
-
-      <figure>
-        <img
-          src="foto_pandemia.jpg"
-          alt="Estudiante con audífonos escribe
-          en un cuaderno durante una clase
-          a distancia desde su casa"
-        >
-      </figure>
-
-      <p>
-        Los jóvenes que participaron en PISA 2025
-        tenían alrededor de nueve o diez años
-        cuando comenzó el confinamiento: estaban
-        en una etapa clave para consolidar la
-        comprensión de textos, aunque ya habían
-        iniciado el aprendizaje de la lectura.
-        La interrupción escolar coincidió con esos
-        años y sus efectos pueden ayudar a entender
-        las dificultades de recuperación posteriores.
-        También invita a mirar con cuidado la caída
-        del quintil más favorecido entre 2018 y 2022:
-        disponer de más recursos no volvió a esos
-        estudiantes inmunes a las consecuencias
-        de la crisis sanitaria. Sin embargo, los
-        datos disponibles no permiten asegurar
-        que la pandemia haya causado específicamente
-        ese descenso, ni atribuir a un quintil el
-        retroceso nacional de PISA 2025.
-      </p>
-
-      <div class="destacado">
-        El cierre de las escuelas afectó a todos,
-        pero las condiciones para seguir aprendiendo
-        desde casa no fueron las mismas.
-      </div>
-
-      <h2>Lo que queda después del regreso</h2>
-
-      <p>
-        El retorno a las aulas no devolvió
-        automáticamente los hábitos de estudio
-        anteriores. Las pantallas, imprescindibles
-        durante la educación remota, continuaron
-        presentes en la vida cotidiana de los
-        estudiantes. Su utilidad para aprender
-        convive con notificaciones, contenidos
-        breves y distracciones que pueden competir
-        con la lectura sostenida. La llamada
-        «crisis de la atención», junto con los
-        aprendizajes interrumpidos durante la
-        pandemia, ofrece un contexto para pensar
-        el retroceso de algunos grupos, no una
-        causa demostrada por PISA.
-      </p>
-
-      <p>
-        La pregunta de fondo no es solamente por
-        qué se estrechó la distancia entre quintiles,
-        sino cómo lograr que esa distancia disminuya
-        porque todos comprenden mejor lo que leen.
-      </p>
-
-      <section class="referencias">
-
-        <h2>Fuentes y metodología</h2>
-
-        <p>
-          Serie PISA de lectura por quintiles
-          socioeconómicos de Chile (2006–2022),
-          trabajada para el proyecto.
-          Las comparaciones de 2018 y 2022
-          son descriptivas; los resultados nacionales
-          de 2025 no se atribuyen a quintiles específicos.
-        </p>
-
-        <p>
-          <a
-            href="https://www.agenciaeducacion.cl/caida-en-los-resultados-pisa-2025-ratifica-necesidad-de-poner-el-foco-en-el-logro-de-los-aprendizajes/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Agencia de Calidad de la Educación:
-            resultados PISA 2025
-          </a>
-        </p>
-
-        <p>
-          <a
-            href="https://www.latercera.com/nacional/noticia/por-que-a-chile-le-fue-mal-en-la-prueba-pisa-generacion-pandemia-y-uso-excesivo-de-pantallas-asoman-como-factores/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            La Tercera:
-            generación pandemia y uso de pantallas
-          </a>
-        </p>
-
-      </section>
-
-    </article>
-  </main>
-
-  <footer>
-    Crónica de datos · Proyecto PISA Chile
-  </footer>
+</main>
 
 </body>
-</html>
+</html
